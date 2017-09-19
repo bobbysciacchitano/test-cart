@@ -1,0 +1,27 @@
+
+.header {
+	background: @brandColor;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	color: @headerText;
+	height: 50px;
+	padding: 0 10px;
+
+	.branding {
+		flex-grow: 1;
+
+		h1 {
+			font-weight: normal;
+			font-size: @brandFontSize;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.login {
+		flex-grow: 0;
+	}
+
+}

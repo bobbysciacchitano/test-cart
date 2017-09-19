@@ -1,0 +1,64 @@
+{
+  "name": "seek-cart",
+  "version": "0.0.0",
+  "description": "Simple cart and pricing model test",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "lint": "eslint --ext .js --ext .jsx src || true",
+    "develop": "webpack-dev-server --host=0.0.0.0",
+    "build": "rm -rf build && cp -R assets build && webpack -p --define process.env.NODE_ENV='\"production\"'"
+  },
+  "author": "Bobby Sciacchitano <hello@bobbysciacchitano.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "axios": "^0.15.3",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.9",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-plugin-webpack-alias": "^2.1.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.11.1",
+    "eslint-plugin-react": "^6.8.0",
+    "html-webpack-plugin": "^2.24.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "lodash": "^4.17.4",
+    "normalize-css": "^2.3.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-test-renderer": "^15.5.4",
+    "redux": "^3.6.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "babel": {
+    "ignore": false,
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      [
+        "babel-plugin-webpack-alias",
+        {
+          "config": "./webpack.config.js"
+        }
+      ]
+    ]
+  },
+  "ava": {
+    "tap": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}

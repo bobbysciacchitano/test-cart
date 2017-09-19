@@ -1,0 +1,76 @@
+{
+	"clients": [
+		{
+			"id": 1,
+			"name": "Unilever",
+			"discounts": {
+				"classic": {
+					"type": "free",
+					"order": 3,
+					"free": 1
+				}
+			}
+		},
+		{
+			"id": 2,
+			"name": "Apple",
+			"discounts": {
+				"standout": {
+					"type": "price",
+					"price": "299.99"
+				}
+			}
+		},
+		{
+			"id": 3,
+			"name": "Nike",
+			"discounts": {
+				"premium": {
+					"type": "reduction",
+					"order": "4",
+					"price": "379.99"
+				}
+			}
+		},
+		{
+			"id": 4,
+			"name": "Ford",
+			"discounts": {
+				"classic": {
+					"type": "free",
+					"order": 5,
+					"free": 1
+				},
+				"standout": {
+					"type": "price",
+					"price": "309.99"
+				},
+				"premium": {
+					"type": "reduction",
+					"order": "3",
+					"price": "389.99"
+				}
+			}
+		}
+	],
+	"products": [
+		{
+			"id": "classic",
+			"name": "Classic Ad",
+			"description": "The most basic level of advertisement",
+			"price": "269.99"
+		},
+		{
+			"id": "standout",
+			"name": "Standout Ad",
+			"description": "Allows advertisers to use a company logo and use a longer presentation text",
+			"price": "322.99"
+		},
+		{
+			"id": "premium",
+			"name": "Premium Ad",
+			"description": "Same benefits as Standout Ad, but also puts the ad at the top of the results, allowing higher visibility",
+			"price": "394.99"
+		}
+	]
+}
