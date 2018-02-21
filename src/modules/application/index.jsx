@@ -4,17 +4,17 @@ import { initialize } from './actions';
 import { isReady, isError, error } from './reducer';
 import Component from './component';
 
-const ApplicationController = React.createClass({
+class ApplicationController extends React.Component {
 
-	componentDidMount: function () {
+	componentDidMount () {
 		this.props.initialize();
-	},
+	}
 
-	render: function () {
+	render () {
 		return <Component {...this.props} />;
-	},
+	}
 
-});
+}
 
 const mapStateToProps = (state) => ({
 	isReady: isReady(state),

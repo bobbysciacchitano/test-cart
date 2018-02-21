@@ -8,8 +8,8 @@ const initialState = {};
  * @param {Object} state
  * @return {Boolean}
  */
-export const isReady = (state) => (
-	state.application.isReady
+export const isReady = ({ application }) => (
+	application.isReady
 );
 
 /**
@@ -18,8 +18,8 @@ export const isReady = (state) => (
  * @param {Object} state
  * @return {Boolean}
  */
-export const isError = (state) => (
-	state.application.isError
+export const isError = ({ application }) => (
+	application.isError
 );
 
 /**
@@ -28,8 +28,8 @@ export const isError = (state) => (
  * @param {Object} state
  * @return {Object}
  */
-export const error = (state) => (
-	state.application.error
+export const error = ({ application }) => (
+	application.error
 );
 
 export default (state = initialState, action) => {

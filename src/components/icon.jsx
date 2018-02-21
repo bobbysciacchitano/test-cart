@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default ({ name, className = '', label }) => (
+const Icon = ({ name, className = '', label }) => (
 	<i className={`icon-${name} ${className}`} title={label || ''} />
 );
+
+export default Icon;

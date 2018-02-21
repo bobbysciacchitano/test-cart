@@ -9,8 +9,8 @@ const initialState = [];
  * @param {String} clientId 
  * @return {Object}
  */
-export const fetchClientById = (state, clientId) => (
-	state.clients.find(({ id }) => id == clientId) || {}
+export const fetchClientById = ({ clients = [] } , clientId) => (
+	clients.find(({ id }) => id == clientId) || {}
 );
 
 /**
@@ -19,8 +19,8 @@ export const fetchClientById = (state, clientId) => (
  * @param {Object} state 
  * @return {Array}
  */
-export const fetchClients = (state) => (
-	state.clients
+export const fetchClients = ({ clients = [] }) => (
+	clients
 );
 
 export default (state = initialState, action) => {

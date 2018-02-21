@@ -1,23 +1,23 @@
 # SEEK Cart
 
 Requirements:
-	*NodeJS
-	*NPM
+* NodeJS
+* NPM/Yarn
 
-All assets are packaged, make sure you run `npm install` before trying to build the project.
+All assets are packaged, make sure you run `yarn install` before trying to build the project.
 
 There is a number of handy commands available to help build this app:
 
 Development Server
 
-`npm run develop`
+`yarn develop`
 
 Building
 
-`npm run build`
+`yarn build`
 
 Test
 
-`npm run test`
+`yarn test`
 
 Unit tests are located in the test directory. The rest of the project source is located in the `src` folder.
